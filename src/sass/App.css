@@ -113,4 +113,16 @@
 
 .heart_icon {
   margin: 0.5rem;
+}
+
+.true_View_product {
+  opacity: 1;
+  background-color: rgb(82, 165, 179);
+  text-align: center;
+  padding: 0.7rem;
+  margin-top: 5rem;
+}
+
+.false_View_product {
+  opacity: 0;
 }/*# sourceMappingURL=App.css.map */

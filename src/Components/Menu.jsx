@@ -3,16 +3,12 @@ import image from '../assets/heart-regular.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
-
 library.add(faHeart)
-
-
-
-
 
 
 const Menu = () => {
     const [heart, setHeart] = useState(false)
+    const [view,setView] = useState(false)
   return (
     <>
     <div style={{backgroundColor:"white"}}>
@@ -28,11 +24,12 @@ const Menu = () => {
                 </div>  
             </div>
             <div className='Search_item_Container'>
-                <div className='card'>
+                <div className='card' onMouseOver={()=>setView(true)} onMouseOut={()=>setView(false)}>
                     
                     <div style={{ backgroundImage: 'url("https://tse1.mm.bing.net/th?id=OIP.ZpgL-9LjKksUTspHysxIzwHaJ-&pid=Api&P=0&h=180")' }} className='img_search'>
                     {!heart?
                         <img src={image} className = {`heart_icon`} onClick={()=>setHeart(!heart)} />:<FontAwesomeIcon icon="fa-solid fa-heart" style={{color: "#ff0000",}} className = {`heart_icon`} onClick={()=>setHeart(!heart)} />}
+                       <p className= {`${view}_View_product`}>View Product</p>
                     </div>                                   
                      
                     <p className='Item_name'>Name_of_item</p>
