@@ -1,3 +1,7 @@
+.html {
+  font-size: 16px;
+}
+
 .Main_div {
   margin: 0;
   background-image: url("../assets/64ad5ff99cd8a851dddb67e2_5e9875de8eedd8ebd1a6c3f6_s3-images-original-priscilla-du-preez-dlxLGIy-2VU-unsplash--2x1--1280.jpeg");
@@ -47,4 +51,66 @@
   position: absolute;
   top: 2rem;
   right: 2rem;
+}
+
+.Search_result_Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 8rem;
+  padding: 0rem;
+  margin: 0.5rem;
+}
+
+.img_search {
+  height: 10rem;
+  text-align: end;
+  padding: 0rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: auto;
+  border: 2px solid transparent;
+}
+
+.Item_name {
+  text-align: center;
+}
+
+.Price_tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  height: 1rem;
+}
+
+.Old_Price {
+  font-weight: 200;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.New_Price {
+  color: rgb(10, 10, 224);
+  font-weight: 800;
+  font-size: larger;
+}
+
+.Rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+
+.heart_icon {
+  margin: 0.5rem;
 }/*# sourceMappingURL=App.css.map */
