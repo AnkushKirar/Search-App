@@ -1,13 +1,50 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 @mixin FlexProp($direction,$justify-content,$align-item){
     display: flex;
     flex-direction: $direction;
     justify-content: $justify-content;
     align-items: $align-item;
 }
+
 .Main_div{
-background-image: url();
+margin: 0;
+background-image: url("../assets/64ad5ff99cd8a851dddb67e2_5e9875de8eedd8ebd1a6c3f6_s3-images-original-priscilla-du-preez-dlxLGIy-2VU-unsplash--2x1--1280.jpeg");
+width: 100vw;
+height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+overflow-x: hidden;
 }
+.Super_conatiner{
+    @include FlexProp(column, flex-start, center)
+}
+.search_bar_container{
+    @include FlexProp(row, space-between,center);
+    margin-top: 12rem;
+    height: 2.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    background-color: white;
+    border: .15rem solid transparent;
+    border-radius: 1rem;
+    width: 40rem;
+    text-align: center;
+    align-self: center;
+}
+.search_filed{
+    border: 2px solid transparent;
+    height: 90%;
+    width: 95%;
+    &:focus{
+        border: 2px solid transparent;
+    }
+
+}
+#img{
+    height: 2.5rem;
+    width: 4rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+

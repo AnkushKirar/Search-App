@@ -5,11 +5,11 @@ function App() {
 
 
   return (
-    <> 
+  
     <div className='Main_div'>
      <Search/>
      </div>
-    </>
+  
   )
 }
 
