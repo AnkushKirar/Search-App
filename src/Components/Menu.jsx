@@ -1,10 +1,18 @@
-import React from 'react';
+import React ,{useState} from 'react';
+import image from '../assets/heart-regular.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-regular-svg-icons'; // Use free-regular-svg-icons for thin icons
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faHeart)
+
+
+
 
 
 
 const Menu = () => {
+    const [heart, setHeart] = useState(false)
   return (
     <>
     <div style={{backgroundColor:"white"}}>
@@ -23,7 +31,8 @@ const Menu = () => {
                 <div className='card'>
                     
                     <div style={{ backgroundImage: 'url("https://tse1.mm.bing.net/th?id=OIP.ZpgL-9LjKksUTspHysxIzwHaJ-&pid=Api&P=0&h=180")' }} className='img_search'>
-                       <FontAwesomeIcon icon={faHeart} className='heart_icon' />
+                    {!heart?
+                        <img src={image} className = {`heart_icon`} onClick={()=>setHeart(!heart)} />:<FontAwesomeIcon icon="fa-solid fa-heart" style={{color: "#ff0000",}} className = {`heart_icon`} onClick={()=>setHeart(!heart)} />}
                     </div>                                   
                      
                     <p className='Item_name'>Name_of_item</p>
