@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@mixin FlexProp($direction,$justify-content,$align-item){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-item;
+}
+.Main_div{
+background-image: url();
+}
