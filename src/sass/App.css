@@ -117,7 +117,7 @@
 
 .true_View_product {
   opacity: 1;
-  background-color: rgb(82, 165, 179);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 1%, rgb(72, 72, 202) 11%, rgb(0, 212, 255) 100%);
   text-align: center;
   padding: 0.7rem;
   margin-top: 5rem;

@@ -8,7 +8,9 @@ function App() {
   return (
   
     <div className='Main_div'>
-     <Menu/>
+      
+        <Menu/>
+     
      </div>
   
   )
